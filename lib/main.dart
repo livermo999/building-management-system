@@ -1,5 +1,7 @@
+import 'package:building_management_system/apartment.dart';
 import 'package:flutter/material.dart';
-import 'package:building_management_system/building_details.dart';
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,8 +16,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        fontFamily: 'IranSans'
       ),
-      home: const BuildingDetails()
+      home: SecondPage()
     );
   }
 }
