@@ -26,26 +26,30 @@ class _SecondPageState extends State<SecondPage> {
                     Row(
              children: [
                 Container(
-                 padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 13),
+                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),     color: Colors.white),
-                     child: Icon(Icons.notifications_active_outlined, size: 35),
+                     child: Icon(Icons.notifications_active_outlined, size: 33),
                     ),
                    SizedBox(width: 10),
                   Expanded(
                    child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),    color: Colors.white),
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: Colors.white),
                      child: Row(
-                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                       mainAxisAlignment: MainAxisAlignment.start,
                    children: [
-                Icon(Icons.apartment, size: 35, color: Colors.grey),
-                SizedBox(width: 5),
-               RichText(
+                Icon(Icons.apartment, size: 33, color: Colors.grey),
+                SizedBox(width: 152),
+                
+               Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  RichText(
   text: TextSpan(
     text: 'ساختمان نیایش ',
     style: const TextStyle(
       fontWeight: FontWeight.bold,
-      fontSize: 20,
+      fontSize: 18,
       color: Colors.black,
     ),
     children: <TextSpan>[
@@ -53,32 +57,34 @@ class _SecondPageState extends State<SecondPage> {
         text: '(',
         style: TextStyle(
           color: Colors.black,
-          fontSize: 20,
+          fontSize: 14,
           fontWeight: FontWeight.bold,
         ),
       ),
       const TextSpan(
         text: 'مدیر',
         style: TextStyle(
-          color: Color.fromARGB(255, 195, 148, 6), 
+          color: Color.fromARGB(255, 206, 178, 92), 
           fontWeight: FontWeight.bold,
-          fontSize: 20,
+          fontSize: 13,
         ),
       ),
       const TextSpan(
         text: ')',
         style: TextStyle(
           color: Colors.black,
-          fontSize: 20,
+          fontSize: 14,
           fontWeight: FontWeight.bold,
         ),
       ),
     ],
   ),
 ),
+                ],
+               ),
 
                 SizedBox(width: 10),
-                Icon(Icons.menu, size: 35, color: Colors.grey)
+                Icon(Icons.menu, size: 33, color: Colors.grey)
               ],
             ),
           ),
@@ -110,7 +116,7 @@ class _SecondPageState extends State<SecondPage> {
                                   children: [
                                     Icon(
                                       Icons.people_outline_outlined,
-                                      size: 35,
+                                      size: 33,
                                       color: Colors.grey,
                                     ),
                                     SizedBox(width: 8),
@@ -119,13 +125,13 @@ class _SecondPageState extends State<SecondPage> {
                                       children: [
                                         Text(
                                           'PIHCQ12',
-                                          style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 19),
+                                          style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 16),
                                         ),
                                         SizedBox(height: 3),
                                         Text(
                                           'کدساختمان',
                                           style: TextStyle(
-                                              color: Colors.grey, fontSize: 12,fontWeight: FontWeight.bold),
+                                              color: Colors.grey, fontSize: 10,fontWeight: FontWeight.bold),
                                         )
                                       ],
                                     ),
@@ -137,12 +143,12 @@ class _SecondPageState extends State<SecondPage> {
                                       'ساختمان نیایش',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
-                                          fontSize: 20),
+                                          fontSize: 18),
                                     ),
                                     SizedBox(width: 8),
                                     Icon(
                                       Icons.note_add_outlined,
-                                      size: 35,
+                                      size: 33,
                                       color: Colors.grey,
                                     )
                                   ],
@@ -156,19 +162,19 @@ class _SecondPageState extends State<SecondPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text('مسکونی',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19)),
-                                    SizedBox(width: 50),
-                                    Text('نوع کاربری',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19,color: Colors.grey)),
-                                    SizedBox(width: 20,),
-                                    Icon(Icons.houseboat_rounded,size: 35,color: Colors.grey,)
+                                    Text('مسکونی',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                                    SizedBox(width: 40),
+                                    Text('نوع کاربری',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16,color: Colors.grey)),
+                                    SizedBox(width: 15,),
+                                    Icon(Icons.houseboat_rounded,size: 33,color: Colors.grey,)
                                   ],
                                 ),
                                 Row(children: [
-                                  Text('ساختمان',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                                  SizedBox(width: 50,),
-                                  Text('نوع بنا',style: TextStyle(color: Colors.grey,fontSize: 19,fontWeight: FontWeight.bold),),
-                                  SizedBox(width: 20,),
-                                  Icon(Icons.house_rounded,size: 35,color: Colors.grey,)
+                                  Text('ساختمان',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+                                  SizedBox(width: 40,),
+                                  Text('نوع بنا',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold),),
+                                  SizedBox(width: 15,),
+                                  Icon(Icons.house_rounded,size: 33,color: Colors.grey,)
                                 ],)
                               ],
                             ),
@@ -179,29 +185,29 @@ class _SecondPageState extends State<SecondPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19)),
-                                    SizedBox(width: 20),
-                                    Text('واحد ها',style: TextStyle(color: Colors.grey,fontSize: 19,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 20),
-                                    Icon(Icons.layers,color: Colors.grey,size: 35)
+                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                                    SizedBox(width: 15),
+                                    Text('واحد ها',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 15),
+                                    Icon(Icons.layers,color: Colors.grey,size: 33)
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19)),
-                                    SizedBox(width: 20),
-                                    Text('طبقات',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey,fontSize: 19)),
-                                    SizedBox(width: 20),
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                                    SizedBox(width: 15),
+                                    Text('طبقات',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey,fontSize: 16)),
+                                    SizedBox(width: 15),
                                     Icon(Icons.stairs,color:Colors.grey,size: 35)
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19)),
-                                    SizedBox(width: 20),
-                                    Text('بلوک ها',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey,fontSize: 19)),
-                                    SizedBox(width: 20),
-                                    Icon(Icons.business,size: 35,color: Colors.grey)
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                                    SizedBox(width: 15),
+                                    Text('بلوک ها',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey,fontSize: 16)),
+                                    SizedBox(width: 15),
+                                    Icon(Icons.business,size: 33,color: Colors.grey)
                                   ],
                                 ),
                               ],
@@ -213,20 +219,20 @@ class _SecondPageState extends State<SecondPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19)),
-                                    SizedBox(width: 60),
-                                    Text('واحد های پر',style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 20),
+                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                                    SizedBox(width: 40),
+                                    Text('واحد های پر',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 15),
                                     Icon(Icons.layers,color: Colors.grey,size: 35),
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19)),
-                                    SizedBox(width: 60),
-                                    Text('واحد های خالی',style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 20),
-                                    Icon(Icons.layers_clear,color: Colors.grey,size: 35)
+                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                                    SizedBox(width: 40),
+                                    Text('واحد های خالی',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 15),
+                                    Icon(Icons.layers_clear,color: Colors.grey,size: 33)
                                   ],
                                 ),
                               ],
@@ -238,29 +244,29 @@ class _SecondPageState extends State<SecondPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19)),
-                                    SizedBox(width: 20),
-                                    Text('ساکن/مالک',style: TextStyle(color: Colors.grey,fontSize: 17,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 20),
-                                    Icon(Icons.maps_home_work_outlined,size: 35,color: Colors.grey)
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                                    SizedBox(width: 15),
+                                    Text('ساکن/مالک',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 15),
+                                    Icon(Icons.maps_home_work_outlined,size: 33,color: Colors.grey)
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19)),
-                                    SizedBox(width: 20),
-                                    Text('ساکنین',style: TextStyle(color: Colors.grey,fontSize: 19,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 20),
-                                    Icon(Icons.home,size: 35,color: Colors.grey)
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                                    SizedBox(width: 15),
+                                    Text('ساکنین',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 15),
+                                    Icon(Icons.home,size: 33,color: Colors.grey)
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19)),
-                                    SizedBox(width: 20),
-                                    Text('مالکین',style: TextStyle(color: Colors.grey,fontSize: 19,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 20),
-                                    Icon(Icons.person_pin_sharp,size: 35,color: Colors.grey)
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                                    SizedBox(width: 15),
+                                    Text('مالکین',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 15),
+                                    Icon(Icons.person_pin_sharp,size: 33,color: Colors.grey)
                                   ],
                                 )
                               ],
@@ -270,12 +276,12 @@ class _SecondPageState extends State<SecondPage> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Icon(Icons.gps_fixed_outlined,size: 35,color: Colors.grey[500]),
+                                Icon(Icons.gps_fixed_outlined,size: 30,color: Colors.grey[500]),
                                 Row(
                                   children: [
-                                    Text('پردیسان ،مجتمع زیتون2',style: TextStyle(color: Colors.grey[600],fontWeight: FontWeight.bold,fontSize: 17),),
+                                    Text('پردیسان ،مجتمع زیتون2',style: TextStyle(color: Colors.grey[600],fontWeight: FontWeight.bold,fontSize: 16),),
                                     SizedBox(width: 10),
-                                    Icon(Icons.public,size: 35,color: Colors.grey[500])
+                                    Icon(Icons.public,size: 33,color: Colors.grey[500])
                                   ],
                                 ),
                               ],
@@ -288,9 +294,9 @@ class _SecondPageState extends State<SecondPage> {
                                 Icon(Icons.keyboard_arrow_left,size: 40,color: Colors.grey[500]),
                                 Row(
                                   children: [
-                                    Text('مدیریت حساب های بانکی',style: TextStyle(color: Colors.grey[600],fontSize: 17,fontWeight: FontWeight.bold),),
+                                    Text('مدیریت حساب های بانکی',style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),),
                                     SizedBox(width: 10),
-                                    Icon(Icons.wallet,size: 35,color: Colors.grey[500])
+                                    Icon(Icons.wallet,size: 33,color: Colors.grey[500])
                                   ],
                                 )
                               ],
@@ -303,9 +309,9 @@ class _SecondPageState extends State<SecondPage> {
                                 Icon(Icons.keyboard_arrow_left,size: 40,color: Colors.grey[500]),
                                 Row(
                                   children: [
-                                    Text('واگذاری مدیریت ساختمان',style: TextStyle(color: Colors.grey[600],fontSize: 17,fontWeight: FontWeight.bold),),
+                                    Text('واگذاری مدیریت ساختمان',style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),),
                                     SizedBox(width: 10),
-                                    Icon(Icons.swap_horiz,size: 35,color: Colors.grey[500])
+                                    Icon(Icons.swap_horiz,size: 33,color: Colors.grey[500])
                                   ],
                                 )
                               ],
@@ -318,9 +324,9 @@ class _SecondPageState extends State<SecondPage> {
                               Icon(Icons.keyboard_arrow_left,size: 40,color: Colors.grey[500]),
                               Row(
                                 children: [
-                                  Text('مدیریت شارژ و تراکنش های خودکار(1)',style: TextStyle(color: Colors.grey[600],fontSize: 17,fontWeight: FontWeight.bold),),
+                                  Text('مدیریت شارژ و تراکنش های خودکار(1)',style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),),
                                   SizedBox(width: 10),
-                                  Icon(Icons.home_filled,size: 35,color: Colors.grey[500])
+                                  Icon(Icons.home_filled,size: 33,color: Colors.grey[500])
                                 ],
                               )
                             ],
@@ -333,9 +339,9 @@ class _SecondPageState extends State<SecondPage> {
                               Icon(Icons.keyboard_arrow_left,size: 40,color: Colors.grey[500]),
                               Row(
                                 children: [
-                                  Text('مدیریت مشاعات ساختمان',style: TextStyle(color: Colors.grey[600],fontSize: 17,fontWeight: FontWeight.bold),),
+                                  Text('مدیریت مشاعات ساختمان',style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),),
                                   SizedBox(width: 10),
-                                  Icon(Icons.volunteer_activism,size: 35,color: Colors.grey[500])
+                                  Icon(Icons.volunteer_activism,size: 33,color: Colors.grey[500])
                                 ],
                               )
                             ],
@@ -351,12 +357,12 @@ class _SecondPageState extends State<SecondPage> {
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
                                       Text('(هییت مدیره،نگهیان،سرایدار،باغبان)کارمندان ',
-                                        style: TextStyle(color: Colors.grey[600],fontSize: 17,fontWeight: FontWeight.bold),
+                                        style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),
                                         textAlign: TextAlign.right,
                                         overflow: TextOverflow.ellipsis,
                                       ),
                                       SizedBox(width: 10),
-                                      Icon(Icons.people_outline_outlined,size: 35,color: Colors.grey[500])
+                                      Icon(Icons.people_outline_outlined,size: 33,color: Colors.grey[500])
                                     ],
                                   ),
                                 )
@@ -366,8 +372,8 @@ class _SecondPageState extends State<SecondPage> {
                             Container(
                               width: double.infinity,
                               height: 40,
-                              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: const Color.fromARGB(255, 74, 137, 237)),
-                              child: MaterialButton(onPressed: (){}, child: Text('مدیریت واحد ها',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 18))),
+                              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: const Color.fromARGB(255, 131, 171, 236)),
+                              child: MaterialButton(onPressed: (){}, child: Text('مدیریت واحد ها',style: TextStyle(color: Colors.white,fontSize: 18))),
                             )
                           ],
                         ),
@@ -386,7 +392,7 @@ class _SecondPageState extends State<SecondPage> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Transform.translate(
-            offset: const Offset(0, 25),
+            offset: const Offset(0, 34),
             child: SizedBox(
               width: 50,
               height: 50,
@@ -416,7 +422,7 @@ class _SecondPageState extends State<SecondPage> {
                     angle: -0.78,
                     child: Icon(
                       Icons.add,
-                      size: 50,
+                      size: 40,
                       color: Colors.white,
                     ),
                   ),
@@ -424,18 +430,18 @@ class _SecondPageState extends State<SecondPage> {
               ),
             ),
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 40),
           const Padding(
-            padding: EdgeInsets.only(top: 8.0),
+            padding: EdgeInsets.only(top: 14.0),
             child: Text(
               'دسترسی سریع',
-              style: TextStyle(fontSize: 12, color: Colors.grey),
+              style: TextStyle(fontSize: 10, color: Colors.grey,fontWeight: FontWeight.bold),
             ),
           ),
         ],
       ),
       bottomNavigationBar: Container(
-        height: 80,
+        height: 75,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: const BorderRadius.only(
@@ -444,102 +450,76 @@ class _SecondPageState extends State<SecondPage> {
           ),
           boxShadow: [
             BoxShadow(
-              color: const Color.fromARGB(255, 216, 234, 248)!,
+              color: const Color.fromARGB(255, 232, 242, 250),
               spreadRadius: 2,
               blurRadius: 3,
               offset: Offset(0, -5),
             ),
           ],
         ),
+        padding: const EdgeInsets.only(right: 20,left: 20),
         child: const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          mainAxisSize: MainAxisSize.min,
+           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          
           children: [
-            Column(
-              mainAxisSize: MainAxisSize.min,
+            Row(
               children: [
-                Icon(Icons.add_home_outlined, size: 35, color: Colors.grey),
+                Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.add_home_outlined, size: 30, color: Colors.grey),
                 SizedBox(height: 3),
-                Text('مشخصات', style: TextStyle(color: Colors.grey, fontSize: 12,fontWeight: FontWeight.bold)),
+                Text('مشخصات', style: TextStyle(color: Colors.grey, fontSize: 11,)),
               ],
             ),
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(Icons.roller_shades_outlined, size: 35, color: Colors.grey),
-                SizedBox(height: 3),
-                Text('هزینه ها', style: TextStyle(color: Colors.grey, fontSize: 12,fontWeight: FontWeight.bold)),
               ],
             ),
-            Column(
-              mainAxisSize: MainAxisSize.min,
+            Row(
               children: [
-                Icon(Icons.message_outlined, size: 35, color: Colors.grey),
+                Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.roller_shades_outlined, size: 30, color: Colors.grey),
                 SizedBox(height: 3),
-                Text('پیام ها', style: TextStyle(color: Colors.grey, fontSize: 12,fontWeight: FontWeight.bold)),
+                Text('هزینه ها', style: TextStyle(color: Colors.grey, fontSize: 11,)),
               ],
             ),
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(Icons.bar_chart_outlined, size: 35, color: Colors.grey),
-                SizedBox(height: 3),
-                Text('گزارشات کلی', style: TextStyle(color: Colors.grey, fontSize: 12,fontWeight: FontWeight.bold)),
               ],
             ),
+            SizedBox(width: 12,),
+            Row(
+              children: [
+                Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.message_outlined, size: 30, color: Colors.grey),
+                SizedBox(height: 3),
+                Text('پیام ها', style: TextStyle(color: Colors.grey, fontSize: 11,)),
+              ],
+            ),
+              ],
+            ),
+            
+            Row(
+              children: [
+                Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.bar_chart_outlined, size: 31, color: Colors.grey),
+                SizedBox(height: 3),
+                Text('گزارشات کلی', style: TextStyle(color: Colors.grey, fontSize: 11,)),
+              ],
+            ),
+              ],
+            )
           ],
         ),
+        
       ),
     );
   }
 
-  // Widget _buildTopBar() {
-  //   return Row(
-  //     children: [
-  //       Container(
-  //         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
-  //         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: Colors.white),
-  //         child: Icon(Icons.notifications_active_outlined, size: 35),
-  //       ),
-  //       SizedBox(width: 10),
-  //       Expanded(
-  //         child: Container(
-  //           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-  //           decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: Colors.white),
-  //           child: Row(
-  //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  //             children: [
-  //               Icon(Icons.apartment, size: 35, color: Colors.grey),
-  //               SizedBox(width: 5),
-  //               RichText(
-  //                 text: TextSpan(
-  //                   text: 'ساختمان نیایش',
-  //                   style: TextStyle(
-  //                     fontWeight: FontWeight.bold,
-  //                     fontSize: 20,
-  //                     color: Colors.black,
-  //                   ),
-  //                   children: <TextSpan>[
-  //                     TextSpan(
-  //                       text: '()مدیر',
-  //                       style: TextStyle(
-  //                         color: Colors.amber, 
-  //                         fontWeight: FontWeight.bold,
-  //                         fontSize: 20,
-  //                       ),
-  //                     ),
-  //                   ],
-  //                 ),
-  //               ),
-  //               SizedBox(width: 10),
-  //               Icon(Icons.menu, size: 35, color: Colors.grey)
-  //             ],
-  //           ),
-  //         ),
-  //       )
-  //     ],
-  //   );
-  // }
+
 
   Widget _buildBackground() {
     return Container(
