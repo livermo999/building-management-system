@@ -26,20 +26,20 @@ class _SecondPageState extends State<SecondPage> {
                     Row(
              children: [
                 Container(
-                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                 padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 10),
                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),     color: Colors.white),
-                     child: Icon(Icons.notifications_active_outlined, size: 33),
+                     child: Icon(Icons.notifications_active_outlined, size: 28),
                     ),
-                   SizedBox(width: 10),
+                   SizedBox(width: 7),
                   Expanded(
                    child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 9),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: Colors.white),
                      child: Row(
-                       mainAxisAlignment: MainAxisAlignment.start,
+                       mainAxisAlignment: MainAxisAlignment.center,
                    children: [
-                Icon(Icons.apartment, size: 33, color: Colors.grey),
-                SizedBox(width: 152),
+                Icon(Icons.apartment, size: 30, color: Colors.grey),
+                SizedBox(width: 72,),
                 
                Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -49,7 +49,7 @@ class _SecondPageState extends State<SecondPage> {
     text: 'ساختمان نیایش ',
     style: const TextStyle(
       fontWeight: FontWeight.bold,
-      fontSize: 18,
+      fontSize: 16,
       color: Colors.black,
     ),
     children: <TextSpan>[
@@ -83,15 +83,15 @@ class _SecondPageState extends State<SecondPage> {
                 ],
                ),
 
-                SizedBox(width: 10),
-                Icon(Icons.menu, size: 33, color: Colors.grey)
+                SizedBox(width: 12),
+                Icon(Icons.menu, size: 30, color: Colors.grey)
               ],
             ),
           ),
         )
       ],
     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: 14),
                     _buildImage(),
                     Transform.translate(
                       offset: const Offset(0, -40),
@@ -116,7 +116,7 @@ class _SecondPageState extends State<SecondPage> {
                                   children: [
                                     Icon(
                                       Icons.people_outline_outlined,
-                                      size: 33,
+                                      size: 30,
                                       color: Colors.grey,
                                     ),
                                     SizedBox(width: 8),
@@ -143,229 +143,240 @@ class _SecondPageState extends State<SecondPage> {
                                       'ساختمان نیایش',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
-                                          fontSize: 18),
+                                          fontSize: 16),
                                     ),
                                     SizedBox(width: 8),
                                     Icon(
                                       Icons.note_add_outlined,
-                                      size: 33,
+                                      size: 30,
                                       color: Colors.grey,
                                     )
                                   ],
                                 )
                               ],
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 3),
                             Divider(color: Colors.grey[200]),
+                            
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   children: [
-                                    Text('مسکونی',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-                                    SizedBox(width: 40),
-                                    Text('نوع کاربری',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16,color: Colors.grey)),
-                                    SizedBox(width: 15,),
-                                    Icon(Icons.houseboat_rounded,size: 33,color: Colors.grey,)
+                                    Text('مسکونی',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
+                                    SizedBox(width: 20),
+                                    Text('نوع کاربری',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15,color: Colors.grey)),
+                                    SizedBox(width: 5,),
+                                    Icon(Icons.houseboat_rounded,size: 29,color: Colors.grey,)
                                   ],
                                 ),
                                 Row(children: [
-                                  Text('ساختمان',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
-                                  SizedBox(width: 40,),
-                                  Text('نوع بنا',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold),),
-                                  SizedBox(width: 15,),
-                                  Icon(Icons.house_rounded,size: 33,color: Colors.grey,)
+                                  Text('ساختمان',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                                  SizedBox(width: 20,),
+                                  Text('نوع بنا',style: TextStyle(color: Colors.grey,fontSize: 15,fontWeight: FontWeight.bold),),
+                                  SizedBox(width: 5,),
+                                  Icon(Icons.house_rounded,size: 29,color: Colors.grey,)
                                 ],)
                               ],
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 7),
                             Divider(color: Colors.grey[200]),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   children: [
-                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-                                    SizedBox(width: 15),
-                                    Text('واحد ها',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 15),
-                                    Icon(Icons.layers,color: Colors.grey,size: 33)
+                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
+                                    SizedBox(width: 7),
+                                    Text('واحد ها',style: TextStyle(color: Colors.grey,fontSize: 15,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 5),
+                                    Icon(Icons.layers,color: Colors.grey,size: 25)
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-                                    SizedBox(width: 15),
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
+                                    SizedBox(width: 7),
                                     Text('طبقات',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey,fontSize: 16)),
-                                    SizedBox(width: 15),
-                                    Icon(Icons.stairs,color:Colors.grey,size: 35)
+                                    SizedBox(width: 5),
+                                    Icon(Icons.stairs,color:Colors.grey,size: 25)
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-                                    SizedBox(width: 15),
-                                    Text('بلوک ها',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey,fontSize: 16)),
-                                    SizedBox(width: 15),
-                                    Icon(Icons.business,size: 33,color: Colors.grey)
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
+                                    SizedBox(width: 7),
+                                    Text('بلوک ها',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey,fontSize: 15)),
+                                    SizedBox(width: 5),
+                                    Icon(Icons.business,size: 25,color: Colors.grey)
                                   ],
                                 ),
                               ],
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 7),
                             Divider(color: Colors.grey[200]),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   children: [
-                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-                                    SizedBox(width: 40),
-                                    Text('واحد های پر',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 15),
-                                    Icon(Icons.layers,color: Colors.grey,size: 35),
+                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
+                                    SizedBox(width: 20),
+                                    Text('واحد های پر',style: TextStyle(color: Colors.grey,fontSize: 15,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 5),
+                                    Icon(Icons.layers,color: Colors.grey,size: 25),
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-                                    SizedBox(width: 40),
-                                    Text('واحد های خالی',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 15),
-                                    Icon(Icons.layers_clear,color: Colors.grey,size: 33)
+                                    Text('13',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
+                                    SizedBox(width: 20),
+                                    Text('واحد های خالی',style: TextStyle(color: Colors.grey,fontSize: 15,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 5),
+                                    Icon(Icons.layers_clear,color: Colors.grey,size: 25)
                                   ],
                                 ),
                               ],
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 7),
                             Divider(color: Colors.grey[200]),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-                                    SizedBox(width: 15),
-                                    Text('ساکن/مالک',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 15),
-                                    Icon(Icons.maps_home_work_outlined,size: 33,color: Colors.grey)
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
+                                    SizedBox(width: 5),
+                                    Text('ساکن/مالک',style: TextStyle(color: Colors.grey,fontSize: 15,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 5),
+                                    Icon(Icons.maps_home_work_outlined,size: 25,color: Colors.grey)
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-                                    SizedBox(width: 15),
-                                    Text('ساکنین',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 15),
-                                    Icon(Icons.home,size: 33,color: Colors.grey)
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
+                                    SizedBox(width: 5),
+                                    Text('ساکنین',style: TextStyle(color: Colors.grey,fontSize: 15,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 5),
+                                    Icon(Icons.home,size: 25,color: Colors.grey)
                                   ],
                                 ),
                                 Row(
                                   children: [
-                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-                                    SizedBox(width: 15),
-                                    Text('مالکین',style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.bold)),
-                                    SizedBox(width: 15),
-                                    Icon(Icons.person_pin_sharp,size: 33,color: Colors.grey)
+                                    Text('5',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
+                                    SizedBox(width: 5),
+                                    Text('مالکین',style: TextStyle(color: Colors.grey,fontSize: 15,fontWeight: FontWeight.bold)),
+                                    SizedBox(width: 5),
+                                    Icon(Icons.person_pin_sharp,size: 25,color: Colors.grey)
                                   ],
                                 )
                               ],
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 6),
                             Divider(color: Colors.grey[200]),
                             Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              mainAxisAlignment: MainAxisAlignment.end,
                               children: [
-                                Icon(Icons.gps_fixed_outlined,size: 30,color: Colors.grey[500]),
+                                Icon(Icons.gps_fixed_outlined,size: 28,color: Colors.grey[500]),
+                                SizedBox(width: 120,),
                                 Row(
                                   children: [
-                                    Text('پردیسان ،مجتمع زیتون2',style: TextStyle(color: Colors.grey[600],fontWeight: FontWeight.bold,fontSize: 16),),
+                                    Text('پردیسان ،مجتمع زیتون2',style: TextStyle(color: Colors.grey[600],fontWeight: FontWeight.bold,fontSize: 14),),
                                     SizedBox(width: 10),
-                                    Icon(Icons.public,size: 33,color: Colors.grey[500])
+                                    Icon(Icons.public,size: 25,color: Colors.grey[500])
                                   ],
                                 ),
                               ],
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 6),
                             Divider(color: Colors.grey[200]),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Icon(Icons.keyboard_arrow_left,size: 40,color: Colors.grey[500]),
+                                Icon(Icons.keyboard_arrow_left,size: 35,color: Colors.grey[500]),
                                 Row(
                                   children: [
-                                    Text('مدیریت حساب های بانکی',style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),),
+                                    Text('مدیریت حساب های بانکی',style: TextStyle(color: Colors.grey[600],fontSize: 14,fontWeight: FontWeight.bold),),
                                     SizedBox(width: 10),
-                                    Icon(Icons.wallet,size: 33,color: Colors.grey[500])
+                                    Icon(Icons.wallet,size: 25,color: Colors.grey[500])
                                   ],
                                 )
                               ],
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 6),
                             Divider(color: Colors.grey[200]),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Icon(Icons.keyboard_arrow_left,size: 40,color: Colors.grey[500]),
+                                Icon(Icons.keyboard_arrow_left,size: 35,color: Colors.grey[500]),
                                 Row(
                                   children: [
-                                    Text('واگذاری مدیریت ساختمان',style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),),
+                                    Text('واگذاری مدیریت ساختمان',style: TextStyle(color: Colors.grey[600],fontSize: 14,fontWeight: FontWeight.bold),),
                                     SizedBox(width: 10),
-                                    Icon(Icons.swap_horiz,size: 33,color: Colors.grey[500])
+                                    Icon(Icons.swap_horiz,size: 29,color: Colors.grey[500])
                                   ],
                                 )
                               ],
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 6),
                           Divider(color: Colors.grey[200]),
                            Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(Icons.keyboard_arrow_left,size: 40,color: Colors.grey[500]),
+                              Icon(Icons.keyboard_arrow_left,size: 35,color: Colors.grey[500]),
                               Row(
                                 children: [
-                                  Text('مدیریت شارژ و تراکنش های خودکار(1)',style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),),
+                                  Text('مدیریت شارژ و تراکنش های خودکار(1)',style: TextStyle(color: Colors.grey[600],fontSize: 14,fontWeight: FontWeight.bold),),
                                   SizedBox(width: 10),
-                                  Icon(Icons.home_filled,size: 33,color: Colors.grey[500])
+                                  Icon(Icons.home_filled,size: 25,color: Colors.grey[500])
                                 ],
                               )
                             ],
                           ),
-                          SizedBox(height: 10),
+                          SizedBox(height: 6),
                           Divider(color: Colors.grey[200]),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(Icons.keyboard_arrow_left,size: 40,color: Colors.grey[500]),
+                              Icon(Icons.keyboard_arrow_left,size: 35,color: Colors.grey[500]),
                               Row(
                                 children: [
-                                  Text('مدیریت مشاعات ساختمان',style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),),
+                                  Text('مدیریت مشاعات ساختمان',style: TextStyle(color: Colors.grey[600],fontSize: 14,fontWeight: FontWeight.bold),),
                                   SizedBox(width: 10),
-                                  Icon(Icons.volunteer_activism,size: 33,color: Colors.grey[500])
+                                  Icon(Icons.volunteer_activism,size: 23,color: Colors.grey[500])
                                 ],
                               )
                             ],
                           ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 6),
                             Divider(color: Colors.grey[200]),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Icon(Icons.keyboard_arrow_left,size: 40,color: Colors.grey[500]),
-                                Flexible(
-                                  child: Row(
+                                Icon(Icons.keyboard_arrow_left,size: 35,color: Colors.grey[500]),
+                                 Row(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
-                                      Text('(هییت مدیره،نگهیان،سرایدار،باغبان)کارمندان ',
-                                        style: TextStyle(color: Colors.grey[600],fontSize: 16,fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.right,
-                                        overflow: TextOverflow.ellipsis,
+                                      RichText(text: 
+                                      TextSpan(
+                                        text: 'کارمندان ساختمان',style: TextStyle(color: Colors.grey[600],fontSize: 14,fontWeight: FontWeight.bold),
+                                        children: <TextSpan>[
+                                           TextSpan(
+                                            text: '(',style: TextStyle(color: Colors.grey[600],
+                                            fontSize: 11,fontWeight: FontWeight.bold)
+                                          ),
+                                          TextSpan(text: 'هییت مدیره،نگهبان،سرایدار،باغبان',style: TextStyle(color: Colors.grey[600],
+                                          fontSize: 11,fontWeight: FontWeight.bold)),
+                                          TextSpan(text: ')',style: TextStyle(color: Colors.grey[600],fontSize: 11,fontWeight: FontWeight.bold))
+                                        ]
+                                      ),
+                                      
                                       ),
                                       SizedBox(width: 10),
-                                      Icon(Icons.people_outline_outlined,size: 33,color: Colors.grey[500])
+                                      Icon(Icons.people_outline_outlined,size: 26,color: Colors.grey[500])
                                     ],
                                   ),
-                                )
+                                
                               ],
                             ),
                             SizedBox(height: 30),
@@ -394,8 +405,8 @@ class _SecondPageState extends State<SecondPage> {
           Transform.translate(
             offset: const Offset(0, 34),
             child: SizedBox(
-              width: 50,
-              height: 50,
+              width: 48,
+              height: 48,
               child: Transform.rotate(
                 angle: 0.78,
                 child: Container(
@@ -430,7 +441,7 @@ class _SecondPageState extends State<SecondPage> {
               ),
             ),
           ),
-          SizedBox(height: 40),
+          SizedBox(height: 30),
           const Padding(
             padding: EdgeInsets.only(top: 14.0),
             child: Text(
@@ -467,33 +478,35 @@ class _SecondPageState extends State<SecondPage> {
                 Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.add_home_outlined, size: 30, color: Colors.grey),
-                SizedBox(height: 3),
+                Icon(Icons.add_home_outlined, size: 28, color: Colors.grey),
+                
                 Text('مشخصات', style: TextStyle(color: Colors.grey, fontSize: 11,)),
               ],
             ),
               ],
             ),
+            
             Row(
               children: [
                 Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.roller_shades_outlined, size: 30, color: Colors.grey),
-                SizedBox(height: 3),
+                Icon(Icons.roller_shades_outlined, size: 28, color: Colors.grey),
+                SizedBox(height: 0),
                 Text('هزینه ها', style: TextStyle(color: Colors.grey, fontSize: 11,)),
               ],
             ),
               ],
             ),
-            SizedBox(width: 12,),
+            SizedBox(width: 60,),
+
             Row(
               children: [
                 Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.message_outlined, size: 30, color: Colors.grey),
-                SizedBox(height: 3),
+                Icon(Icons.message_outlined, size: 28, color: Colors.grey),
+                
                 Text('پیام ها', style: TextStyle(color: Colors.grey, fontSize: 11,)),
               ],
             ),
@@ -505,8 +518,8 @@ class _SecondPageState extends State<SecondPage> {
                 Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.bar_chart_outlined, size: 31, color: Colors.grey),
-                SizedBox(height: 3),
+                Icon(Icons.bar_chart_outlined, size: 28, color: Colors.grey),
+                
                 Text('گزارشات کلی', style: TextStyle(color: Colors.grey, fontSize: 11,)),
               ],
             ),
@@ -546,8 +559,8 @@ class _SecondPageState extends State<SecondPage> {
           top: 0,
           left: 0,
           child: Container(
-            width: 45,
-            height: 45,
+            width: 40,
+            height: 40,
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -562,7 +575,7 @@ class _SecondPageState extends State<SecondPage> {
                 ]),
             child: Icon(
               Icons.settings,
-              size: 30,
+              size: 28,
               color: Colors.grey,
             ),
           ),

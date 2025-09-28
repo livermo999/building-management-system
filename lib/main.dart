@@ -1,4 +1,5 @@
 import 'package:building_management_system/apartment.dart';
+import 'package:building_management_system/home/project.dart';
 import 'package:flutter/material.dart';
 
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         fontFamily: 'IranSans'
       ),
-      home: SecondPage()
+      home: 
+      SecondPage()
     );
   }
 }
